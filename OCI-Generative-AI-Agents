@@ -1,0 +1,26 @@
+Chatbot with RAG Using OCI Generative AI Agents
+
+https://www.oracle.com/asean/artificial-intelligence/chatbot-with-rag/
+
+Introduction
+In today’s technology landscape, we can tap into research and statistics, pulling in data feeds for analysis and drawing insights to make decisions in real time. However, new information can be hard to parse and contextualize, even for the most robust analytics solutions. This is where retrieval-augmented generation (RAG) is useful, allowing you to augment the knowledge of a large language model without retraining it when new information is available. This updates your model with more recent data, making it more capable, with minimal effort.
+
+Oracle Cloud Infrastructure (OCI) Generative AI Agents allows you to do just that. In this example, we’ll upload our documents, process this data, put it into a vector store (via OCI Search with OpenSearch), create a Redis cluster for caching purposes, and provide you with a way to consume the data through a chatbot.
+
+For the infrastructure, we’ll have the following OCI services present:
+
+OCI Cache for caching user-agent interactions (so we can give some context to the model)
+OCI Search with OpenSearch cluster for index similarity search (vector database) and storing indexes with data
+OCI Compute for connecting to the OpenSearch cluster securely (through OCI private subnet routing)
+OCI Generative AI Agents for communicating and interacting with the data in our cluster
+Demo
+
+Demo: Chatbot with RAG Using OCI Generative AI Agents (1:44)
+Prerequisites and setup
+Oracle Cloud account—sign-up page
+Getting started with OCI Generative AI—documentation
+OCI SDK and command-line interface—configuration
+OCI Generative AI—Python SDK
+Open source package manager—Conda
+Getting started
+Detailed steps and sample code on GitHub
